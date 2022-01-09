@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href= "Cdesert.css"> 
+<link href= "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head> 
+<body> 
+<div class="container"> 
+    <div id="path"></div>
+    <span class="material-icons sound">
+        play_disabled
+    </span>
+<div class="gameover">Game Over
+<form action="Desert.html">
+         <button  class="replay" type="submit">Replay</button>
+      </form>
+      <form action="Homepage.html">
+        <button  class="end" type="submit">End game</button>
+     </form><form action="Location.html">
+        <button  class="location" type="submit">Change Location</button>
+     </form>
+
+</div>
+ 
+<div id="scorecount">Your score : 0</div> 
+<div class="fire animatefire"></div>
+<div class="path"></div>
+<div class="obstacle animateobstacle"></div> 
+<div class="player" style="left: 426px;"></div> 
+</div> 
+<script src="script.js" ></script>
+</body> 
+</html>

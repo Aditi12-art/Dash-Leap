@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+  
+    overflow: hidden;
+  }
+
+  .container {
+    background-image: url(desertbg.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 110vw;
+    height: 110vh;
+    bottom:-10px;
+  }
+  
+   #scorecount {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    padding: 28px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .obstacle {
+    background-image: url(deobs.png);
+    background-size: cover;
+    width: 110px;
+    height: 140px;
+    position: absolute;
+    bottom: 5px;
+    right: 120px;
+  }
+  
+  .animateobstacle {
+    animation: aniob 4s linear infinite;
+  }
+  @keyframes aniob {
+    0% {
+      left: 100vw;
+    }
+    100% {
+      left: -10vw;
+    }
+  }
+ 
+  .player {
+    background-image: url(deplayer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 170px;
+   position: absolute; 
+    bottom: 50px;
+    left: 2px;
+  }
+  
+  .animateplayer {
+    animation: ani 1s linear;
+  }
+  @keyframes ani {
+    0% {
+      bottom:50px;
+    }
+    25% {
+      bottom: 200px;
+    }
+    50% {
+      bottom: 400px;
+    }
+    75% {
+      bottom: 261px;
+    }
+    100% {
+      bottom: 50px;
+    }
+  }
+ 
+  .gameover {
+    visibility: hidden;
+    font-family: "Ubuntu", sans-serif;
+    position: absolute;
+    padding: 18px;
+    top: 29vh;
+    left: 30vw;
+    color: rgb(201, 189, 189);
+    font-weight: bold;
+    font-size: 6vw;
+    background-color: rgb(190, 39, 47);
+    border-radius: 25px;
+  }
+  
+  .replay {
+    padding: 8px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    top: 5vh;
+    left: 35vw;
+    font-size: 2vw;
+  }
+  .end{
+    padding: 8px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    order: 1;
+    top: 13vh;
+    left: 35vw;
+    font-size: 2vw;
+  }
+  .location {
+    padding: 8px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    top: 21vh;
+    left: 35vw;
+    font-size: 2vw;
+  }
+

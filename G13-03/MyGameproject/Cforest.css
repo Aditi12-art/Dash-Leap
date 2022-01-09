@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  #path {
+    position: fixed;
+    bottom: -115px;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background-image: url("path1.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    
+  }
+  .sound {
+    font-size: 5rem !important;
+    color: #fff;
+    cursor: pointer;
+  }
+  .container {
+    background-image: url(shomebg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #scorecount {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    padding: 28px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .obstacle {
+    background-image: url(frobs.png);
+    background-size: cover;
+    width: 50px;
+    height: 140px;
+    position: absolute;
+    bottom: 0px;
+    right: 120px;
+  }
+  
+  .animateobstacle {
+    animation: aniob 4s linear infinite;
+  }
+  @keyframes aniob {
+    0% {
+      left: 100vw;
+    }
+    100% {
+      left: -10vw;
+    }
+  }
+  
+  .player {
+    background-image: url(frplayer.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 250px;
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+  }
+  
+  .animateplayer {
+    animation: ani 1s linear;
+  }
+  @keyframes ani {
+    0% {
+      bottom: 0px;
+    }
+    25% {
+      bottom: 150px;
+    }
+    50% {
+      bottom: 300px;
+    }
+    75% {
+      bottom: 211px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  
+  .gameover {
+    visibility: hidden;
+    font-family: "Ubuntu", sans-serif;
+    position: absolute;
+    padding: 18px;
+    top: 29vh;
+    left: 30vw;
+    color: rgb(201, 189, 189);
+    font-weight: bold;
+    font-size: 6vw;
+    background-color: rgb(190, 39, 47);
+    border-radius: 25px;
+  }
+  
+  .replay {
+    padding: 8px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    top: 5vh;
+    left: 35vw;
+    font-size: 2vw;
+  }
+  .end{
+    padding: 8px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    order: 1;
+    top: 13vh;
+    left: 35vw;
+    font-size: 2vw;
+  }
+  .location {
+    padding: 8px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    top: 21vh;
+    left: 35vw;
+    font-size: 2vw;
+  }
+

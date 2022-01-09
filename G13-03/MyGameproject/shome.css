@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+	overflow: hidden;
+	margin: 0%;
+	justify-content: space-around;
+	align-items: center;
+  }
+
+nav{
+	flex: 1;
+	text-align: center;
+}
+.row{
+	display:flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#gameName {
+	position: absolute;
+	color: white;
+	top: 12vh;
+	font-family: "Halo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	left:25vw;
+    font-size:9vw;
+	text-shadow: 8px 8px 10px black;
+	border-radius: 30px;
+  }
+  
+  .container {
+	background-image: url(shomebg.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 110vw;
+	height: 110vh;
+  }
+  nav .play {
+	position: absolute;
+	padding: 30px;
+	background-color: black;
+	border-radius: 100px;
+	color: rgb(255, 255, 255);
+	top: 40vh;
+	left: 45vw;
+	font-size: 75px;
+  }
+  #path {
+    position: fixed;
+    bottom:-9.5vh;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background-image: url("path1.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    
+  }
+  .player {
+	background-image: url(frplayer.PNG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 180px;
+	height: 340px;
+	position: absolute;
+	bottom: 5px;
+	animation: walk steps(3) infinite, move 4s linear infinite;
+  }
+  @keyframes walk {
+	from {
+	  background-position: 0;
+	}
+	to {
+	  background-position: -2236px;
+	}
+  }
+  @keyframes move {
+	0% {
+	  transform: translate(-100px);
+	}
+	100% {
+	  transform: translate(2256px);
+	}
+  }
+  
+  
